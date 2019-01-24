@@ -8,7 +8,7 @@
   <% @songs.each do |song| %>
     <h3><%= song.title %></h3>
     <p>Song length: <%= song.length %></p>
-    <p>Playlist: <%= song.playlist.name %></p>
-    <p>Play Count: $<%= song.play_count %></p>
+    <p><% if song.playlist %> Playlist: <%= song.playlist.name %><% end %></p>
+    <p>Play Count: <%= song.play_count %></p>
   <% end %>
 </div>

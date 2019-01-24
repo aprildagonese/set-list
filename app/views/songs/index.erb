@@ -1,8 +1,11 @@
 <!-- views/songs/index.erb -->
+<p>Add a new song <a href="/songs/new">here</a></p>
+<p>Find a song by ID <a href="/songs/:id">here</a></p>
+
  <% @songs.each do |song| %>
   <ul>
     <li><%= song.title %></li>
     <li><%= song.length %></li>
     <li><%= song.play_count %></li>
   </ul>
- <% end %> 
+ <% end %>
